@@ -23,9 +23,9 @@ Spinach cheese dip with chips
 
 Onion rings
 
-French fries (with an option to add cheese/ bacon)
+French fries
 
-Baked potato (with an option to add cheese/ bacon)
+Baked potato
 
 Breadsticks
 
@@ -45,7 +45,7 @@ Deep fried cheese dumplings
 
 MAINS
 
-PIZZA (WHEN ADDITIONS)
+PIZZA
 
 
 Chicken pot pie
@@ -54,7 +54,7 @@ Mashed potatoes
 
 Fried chicken
 
-Burgers (with an option to add cheese/ bacon)
+Burgers
 
 Lobster rolls, shrimp, grilled fish if you’re next to a fresh body of water
 
@@ -165,13 +165,13 @@ peach smoothie
 
 DRINKS
 
-Kale and pineapple smoothies
+kale and pineapple smoothie
 
-Spinach and blueberries smoothies
+spinach and blueberries smoothie
 
-Peach and cauliflower smoothies
+peach and cauliflower smoothie
 
-Strawberries and beets smoothies
+strawberries and beets smoothie
 
 Coke
 

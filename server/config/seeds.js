@@ -33,7 +33,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 4.99,
       category: categories[0]._id
     },
     {
@@ -41,7 +41,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 3.99,
       category: categories[0]._id
     },
     {
@@ -49,7 +49,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -57,7 +57,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -65,7 +65,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -73,7 +73,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -81,7 +81,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 3.99,
       category: categories[0]._id
     },
     {
@@ -89,7 +89,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -97,7 +97,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 4.99,
       category: categories[0]._id
     },
     {
@@ -113,7 +113,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 3.99,
       category: categories[0]._id
     },
     {
@@ -121,7 +121,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 4.99,
       category: categories[0]._id
     },
     {
@@ -129,7 +129,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[0]._id
     },
     {
@@ -137,7 +137,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 14.99,
       category: categories[1]._id
     },
     {
@@ -145,7 +145,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 9.99,
       category: categories[1]._id
     },
     {
@@ -153,7 +153,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 5.99,
       category: categories[1]._id
     },
     {
@@ -161,7 +161,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 7.99,
       category: categories[1]._id
     },
     {
@@ -169,7 +169,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 12.99,
       category: categories[1]._id
     },
     {
@@ -177,7 +177,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 17.99,
       category: categories[1]._id
     },
     {
@@ -185,7 +185,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 16.99,
       category: categories[1]._id
     },
     {
@@ -193,7 +193,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 11.99,
       category: categories[1]._id
     },
     {
@@ -201,7 +201,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 4.99,
       category: categories[1]._id
     },
     {
@@ -209,7 +209,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 8.99,
       category: categories[1]._id
     },
     {
@@ -217,7 +217,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 10.99,
       category: categories[1]._id
     },
     {
@@ -225,7 +225,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 13.99,
       category: categories[1]._id
     },
     {
@@ -233,7 +233,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 14.99,
       category: categories[1]._id
     },
     {
@@ -241,7 +241,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 15.99,
       category: categories[1]._id
     },
     {
@@ -249,7 +249,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 15.99,
       category: categories[1]._id
     },
     {
@@ -257,7 +257,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 13.99,
       category: categories[1]._id
     },
     {
@@ -265,7 +265,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -273,7 +273,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[2]._id
     },
     {
@@ -281,7 +281,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -289,7 +289,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -297,7 +297,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -305,7 +305,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -313,7 +313,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[2]._id
     },
     {
@@ -321,7 +321,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[2]._id
     },
     {
@@ -329,7 +329,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -337,7 +337,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[2]._id
     },
     {
@@ -345,7 +345,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.50,
       category: categories[2]._id
     },
     {
@@ -353,7 +353,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[3]._id
     },
     {
@@ -361,7 +361,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[3]._id
     },
     {
@@ -369,7 +369,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[3]._id
     },
     {
@@ -377,7 +377,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 2.00,
       category: categories[3]._id
     },
     {
@@ -385,7 +385,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[3]._id
     },
     {
@@ -393,7 +393,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[3]._id
     },
     {
@@ -401,7 +401,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[3]._id
     },
     {
@@ -409,24 +409,280 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      price: 2.99,
+      price: 1.00,
       category: categories[3]._id
     },
     {
-      name: '',
+      name: 'Grilled cheese',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Tomato soup',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
       price: 2.99,
-      category: categories[3]._id
+      category: categories[4]._id
     },
     {
-      name: '',
+      name: 'Chicken fingers/ nuggets',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Flatbread pizza',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Mac & cheese',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 3.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Mini burgers',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 3.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Mini pizzas',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 3.99,
+      category: categories[4]._id
+    },
+    {
+      name: 'Apple pie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Pumpkin pie (a great choice during the Fall)',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Giant chocolate chip cookies',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Banana split',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Molten lava cakes',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Cinnamon rolls',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Cheesecake',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 7.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Baklava',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 7.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Lemon cake',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Cannoli',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 4.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Strawberry shortcake',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 6.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'Apple Cobbler',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[5]._id
+    },
+    {
+      name: 'kale and pineapple smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[6]._id
+    },
+    {
+      name: 'spinach and blueberries smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[6]._id
+    },
+    {
+      name: 'peach and cauliflower smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[6]._id
+    },
+    {
+      name: 'strawberries and beets smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 5.99,
+      category: categories[6]._id
+    },
+    {
+      name: 'coke',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 1.50,
+      category: categories[6]._id
+    },
+    {
+      name: 'sprite',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 1.50,
+      category: categories[6]._id
+    },
+    {
+      name: 'Coffee',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
       price: 2.99,
-      category: categories[3]._id
+      category: categories[6]._id
+    },
+    {
+      name: 'root beer',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 1.50,
+      category: categories[6]._id
+    },
+    {
+      name: 'orange crush',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 1.50,
+      category: categories[6]._id
+    },
+    {
+      name: 'chocolate milk',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
+    },
+    {
+      name: 'Water',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
+    },
+    {
+      name: 'Coconut Water',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
+    },
+    {
+      name: 'milk',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
+    },
+    {
+      name: 'strawberry smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
+    },
+    {
+      name: 'peach smoothie',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'cookie-tin.jpg',
+      price: 2.99,
+      category: categories[7]._id
     },
   ]);
 
