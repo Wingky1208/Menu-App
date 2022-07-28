@@ -138,4 +138,38 @@ Homemade Ketchup
 
 
 
-SIDES????????????
+KIDS DRINKS
+
+chocolate milk
+
+Water
+
+Coconut Water
+
+milk
+
+strawberry smoothie
+
+peach smoothie
+
+
+DRINKS
+
+Kale and pineapple smoothies
+
+Spinach and blueberries smoothies
+
+Peach and cauliflower smoothies
+
+Strawberries and beets smoothies
+
+Coke
+
+Sprite
+
+Coffee
+
+root beer
+
+orange crush
+
