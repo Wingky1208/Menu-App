@@ -1,3 +1,13 @@
+../../client/public/images
+
+model parameters
+
+name
+description
+image
+price
+category
+
 APPETIZERS
 
 
