@@ -27,8 +27,9 @@ const typeDefs = gql`
     orders: [Order]
   }
   type Rating {
-    thumbsUp:number
-    thumbsDown: number
+    thumbsUp: Float
+    thumbsDown: Float
+    item: Item
   }
   type Checkout {
     session: ID
@@ -43,6 +44,7 @@ const typeDefs = gql`
     item(_id: ID!): Item
     user: User
     order(_id: ID!): Order
+    rating(_id: ID!): Rating
     checkout(products: [ID]!): Checkout
   }
   
