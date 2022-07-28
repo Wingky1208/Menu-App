@@ -1,4 +1,5 @@
 const db = require('./connection');
+/*
 const categories = require('./connection');
 const items_appetizers = require('./connection');
 const items_mains = require('./connection');
@@ -8,6 +9,7 @@ const items_kids_menu = require('./connection');
 const items_desserts = require('./connection');
 const items_drinks = require('./connection');
 const items_kids_drinks = require('./connection');
+*/
 
 const { User, Category, Item, Order } = require('../models');
 
@@ -38,7 +40,8 @@ db.once('open', async () => {
     items_desserts, 
     items_drinks, 
     items_kids_drinks
-  ]);*/
+  ]);
+  */
 
   const Items = await Item.insertMany([
     {
@@ -716,17 +719,38 @@ db.once('open', async () => {
     lastName: 'Washington',
     email: 'pamela@testmail.com',
     password: 'password12345',
-    orders: [
+    orders: ''/*[
       {
         Items: [Items[0]._id, Items[0]._id, Items[1]._id]
       }
-    ]
+    ]*/
   });
 
   await User.create({
     firstName: 'Elijah',
     lastName: 'Holt',
     email: 'eholt@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'Winkey',
+    lastName: 'Liang',
+    email: 'wL@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'Abdalla',
+    lastName: 'Jama',
+    email: 'aj@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'James',
+    lastName: 'Fidlin',
+    email: 'jf@testmail.com',
     password: 'password12345'
   });
 
