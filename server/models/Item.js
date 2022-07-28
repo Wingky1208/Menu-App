@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
+const Rating = require('./Rating');
 
 const itemSchema = new Schema({
   name: {
