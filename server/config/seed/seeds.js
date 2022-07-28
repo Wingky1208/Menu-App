@@ -1,4 +1,14 @@
 const db = require('./connection');
+const categories = require('./connection');
+const items_appetizers = require('./connection');
+const items_mains = require('./connection');
+const items_burger_toppings = require('./connection');
+const items_pizza_toppings = require('./connection');
+const items_kids_menu = require('./connection');
+const items_desserts = require('./connection');
+const items_drinks = require('./connection');
+const items_kids_drinks = require('./connection');
+
 const { User, Category, Item, Order } = require('../models');
 
 db.once('open', async () => {
@@ -18,6 +28,17 @@ db.once('open', async () => {
   console.log('categories seeded');
 
   await Item.deleteMany();
+/*
+  const Items = await Item.insertMany([
+    items_appetizers, 
+    items_mains, 
+    items_burger_toppings, 
+    items_pizza_toppings, 
+    items_kids_menu, 
+    items_desserts, 
+    items_drinks, 
+    items_kids_drinks
+  ]);*/
 
   const Items = await Item.insertMany([
     {
@@ -519,7 +540,7 @@ db.once('open', async () => {
     {
       name: 'Cheesecake',
       description:
-        '',
+        'Cheesecake, that is all.',
       image: 'items_63.jpg',
       price: 7.99,
       category: categories[5]._id
@@ -527,7 +548,7 @@ db.once('open', async () => {
     {
       name: 'Baklava',
       description:
-        '',
+        'Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.',
       image: 'items_64.jpg',
       price: 7.99,
       category: categories[5]._id
@@ -535,7 +556,7 @@ db.once('open', async () => {
     {
       name: 'Lemon cake',
       description:
-        '',
+        ' Made from scratch with real ingredients such as freshly squeezed lemon juice and lemon zest, this cake is full of flavor.',
       image: 'items_65.jpg',
       price: 5.99,
       category: categories[5]._id
@@ -543,7 +564,7 @@ db.once('open', async () => {
     {
       name: 'Cannoli',
       description:
-        '',
+        ' Delicious fluffy pastry filled with traditional Italian custard and your choice of Strawberry or Black Cherry sauce. Topped with fresh Black Cherries.',
       image: 'items_66.jpg',
       price: 4.99,
       category: categories[5]._id
@@ -551,7 +572,7 @@ db.once('open', async () => {
     {
       name: 'Strawberry shortcake',
       description:
-        '',
+        ' Fresh Whipped Cream Layered with Vanilla Sponge Cake and Fresh. Strawberries Garnished with Chocolate Dipping sause! mmmmmmmmmm',
       image: 'items_67.jpg',
       price: 6.99,
       category: categories[5]._id
@@ -559,7 +580,7 @@ db.once('open', async () => {
     {
       name: 'Apple Cobbler',
       description:
-        '',
+        'This old-fashioned Apple Cobbler is one of our FAVORITE desserts. It\'s made with fresh apples in a cinnamon sauce.',
       image: 'items_68.jpg',
       price: 5.99,
       category: categories[5]._id
