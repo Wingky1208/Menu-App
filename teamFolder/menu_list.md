@@ -1,3 +1,13 @@
+../../client/public/images
+
+model parameters
+
+name
+description
+image
+price
+category
+
 APPETIZERS
 
 
@@ -13,9 +23,9 @@ Spinach cheese dip with chips
 
 Onion rings
 
-French fries (with an option to add cheese/ bacon)
+French fries
 
-Baked potato (with an option to add cheese/ bacon)
+Baked potato
 
 Breadsticks
 
@@ -35,7 +45,7 @@ Deep fried cheese dumplings
 
 MAINS
 
-PIZZA (WHEN ADDITIONS)
+PIZZA
 
 
 Chicken pot pie
@@ -44,7 +54,7 @@ Mashed potatoes
 
 Fried chicken
 
-Burgers (with an option to add cheese/ bacon)
+Burgers
 
 Lobster rolls, shrimp, grilled fish if you’re next to a fresh body of water
 
@@ -138,4 +148,38 @@ Homemade Ketchup
 
 
 
-SIDES????????????
+KIDS DRINKS
+
+chocolate milk
+
+Water
+
+Coconut Water
+
+milk
+
+strawberry smoothie
+
+peach smoothie
+
+
+DRINKS
+
+kale and pineapple smoothie
+
+spinach and blueberries smoothie
+
+peach and cauliflower smoothie
+
+strawberries and beets smoothie
+
+Coke
+
+Sprite
+
+Coffee
+
+root beer
+
+orange crush
+
