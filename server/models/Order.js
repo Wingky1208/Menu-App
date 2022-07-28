@@ -4,11 +4,16 @@ const { Schema } = mongoose;
 const Item = require('./Item');
 
 const orderSchema = new Schema({
-  date: {
+  purchaseDate: {
     type: Date,
     default: Date.now
   },
-  items: [Item.Schema]
+  items: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Item'
+    }
+  ]
 });
 
 const Order = mongoose.model('Order', orderSchema);
