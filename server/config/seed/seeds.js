@@ -30,18 +30,18 @@ db.once('open', async () => {
   console.log('categories seeded');
 
   await Item.deleteMany();
-/*
-  const Items = await Item.insertMany([
-    items_appetizers, 
-    items_mains, 
-    items_burger_toppings, 
-    items_pizza_toppings, 
-    items_kids_menu, 
-    items_desserts, 
-    items_drinks, 
-    items_kids_drinks
-  ]);
-  */
+  /*
+    const Items = await Item.insertMany([
+      items_appetizers, 
+      items_mains, 
+      items_burger_toppings, 
+      items_pizza_toppings, 
+      items_kids_menu, 
+      items_desserts, 
+      items_drinks, 
+      items_kids_drinks
+    ]);
+    */
 
   const Items = await Item.insertMany([
     {
@@ -712,9 +712,8 @@ db.once('open', async () => {
 
   console.log('Items seeded');
 
-  
   await User.deleteMany({});
-  
+
   await User.create({
     firstName: 'Pamela',
     lastName: 'Washington',

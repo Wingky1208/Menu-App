@@ -1,9 +1,15 @@
-import Item from '../components/Item'
+import React from "react";
+import CategoryMenu from "../components/Menu";
+import Cart from "../components/Cart";
+import Item from "../components/Item";
+
 
 const Home = () => {
   return (
-    <div>
-      <Item />
+    <div className="container">
+      <CategoryMenu />
+      <Cart />
+        <Item />      
     </div>
   );
 };
