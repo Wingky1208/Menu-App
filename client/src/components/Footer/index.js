@@ -2,7 +2,7 @@
 const Nav = () => {
   return (
     <div className="container">
-        TEST
+        FOOTER
     </div>
   );
 };
