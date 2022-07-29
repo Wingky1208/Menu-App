@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 
-function FooterStrap(props) {
+function Footer(props) {
   return (
     <Card className="text-center">
 
@@ -18,4 +18,4 @@ function FooterStrap(props) {
   )
 }
 
-export default FooterStrap;
+export default Footer;
