@@ -17,14 +17,14 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'appetizers' },
-    { name: 'mains' },
-    { name: 'burger_toppings' },
-    { name: 'pizza_toppings' },
-    { name: 'kids_menu' },
-    { name: 'desserts' },
-    { name: 'drinks' },
-    { name: 'kids_drinks' }
+    { name: 'Appetizers' },
+    { name: 'Mains' },    
+    { name: 'Burger Toppings'},
+    { name: 'Pizza Toppings'},
+    { name: 'Kids Menu' },
+    { name: 'Desserts' },
+    { name: 'Drinks' },
+    { name: 'Kids Drinks' }
   ]);
 
   console.log('categories seeded');
@@ -719,32 +719,35 @@ db.once('open', async () => {
     lastName: 'Washington',
     email: 'pamela@testmail.com',
     password: 'password12345',
-    orders: ''[
-      {
-        Items: [Items[0]._id, Items[0]._id, Items[1]._id]
-      }
-    ]
   });
-
+  
   await User.create({
     firstName: 'Elijah',
     lastName: 'Holt',
     email: 'eholt@testmail.com',
     password: 'password12345'
   });
-
+  
   await User.create({
     firstName: 'Winkey',
     lastName: 'Liang',
     email: 'wL@testmail.com',
     password: 'password12345'
   });
+  
+  const items = await Item.find({});
+
 
   await User.create({
     firstName: 'Abdalla',
     lastName: 'Jama',
     email: 'aj@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      items[0]._id,
+      items[1]._id,
+      items[2]._id
+    ]
   });
 
   await User.create({

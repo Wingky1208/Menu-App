@@ -4,6 +4,7 @@ import { Card } from 'react-bootstrap';
 
 function Footer(props) {
   return (
+
     <Card className="text-center">
 
       <div>
