@@ -69,7 +69,6 @@ function Nav() {
             </Link>
           </li>
           <li>
-
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
@@ -87,7 +86,6 @@ function Nav() {
           </li>
           <li>
             <Link to="/login">
-
               Login
             </Link>
           </li>
@@ -95,5 +93,20 @@ function Nav() {
       );
     }
   }
+
+  return (
+    <header className="flex-row px-1">
+      <h1>
+        <Link to="/">
+          Menu-app
+        </Link>
+      </h1>
+
+      <nav>
+        {showNavigation()}
+      </nav>
+    </header>
+  );
+}
 
 export default Nav;
