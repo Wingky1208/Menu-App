@@ -14,7 +14,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import Item from './components/Item'
+import ItemDetails from './pages/ItemDetails'
 import { StoreProvider } from './utils/GlobalState';
 
 const httpLink = createHttpLink({
@@ -62,7 +62,7 @@ function App() {
             />
             <Route 
               path="/items/:id" 
-              element={<Item />} 
+              element={<ItemDetails />} 
             />
           </Routes>
           <Footer />

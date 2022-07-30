@@ -11,7 +11,7 @@ const items_drinks = require('./connection');
 const items_kids_drinks = require('./connection');
 */
 
-const { User, Category, Item, Order } = require('../../models');
+const { User, Category, Item, Rating, Order } = require('../../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -50,7 +50,7 @@ db.once('open', async () => {
         'Stretchy, cheesy, melty mozzarella that\'s battered and fried. Served with a marinara sauce for dipping.',
       image: 'items_1.jpg',
       price: 2.99,
-      category: categories[0]._id
+      category: categories[0]._id,
     },
     {
       name: 'Cheddar Biscuits',
@@ -744,9 +744,20 @@ db.once('open', async () => {
     email: 'aj@testmail.com',
     password: 'password12345',
     orders: [
-      items[0]._id,
-      items[1]._id,
-      items[2]._id
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ]
+      },
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ],
+      }
     ]
   });
 

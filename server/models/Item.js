@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-const Rating = require('./Rating');
 
 const itemSchema = new Schema({
   name: {
@@ -24,7 +23,16 @@ const itemSchema = new Schema({
     ref: 'Category',
     required: true
   },
-  ratings: [Rating.schema]
+  thumbsUp: {
+    type: Number,
+    required: true,
+    default: 0
+  },
+  thumbsDown: {
+    type: Number,
+    required: true,
+    default: 0
+  },
 });
 
 const Item = mongoose.model('Item', itemSchema);
