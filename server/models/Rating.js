@@ -13,11 +13,6 @@ const ratingSchema = new Schema({
     required: true,
     default: 0
   },
-  item: {
-    type: Schema.Types.ObjectId,
-    ref: 'Item',
-    required: true
-  }
 });
 
 const Rating = mongoose.model('Rating', ratingSchema);

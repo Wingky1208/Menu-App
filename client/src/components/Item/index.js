@@ -1,58 +1,54 @@
-import React, { useEffect } from 'react';
-import { useStoreContext } from '../../utils/GlobalState';
-import { UPDATE_ITEMS } from '../../utils/actions';
-import { useQuery } from '@apollo/client';
-import { QUERY_ITEMS } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
+import { Link } from "react-router-dom";
+import { useStoreContext } from "../../utils/GlobalState";
+import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import { idbPromise } from "../../utils/helpers";
 
-function Item() {
+function Item(item) {
   const [state, dispatch] = useStoreContext();
 
-  const { currentCategory } = state;
+  const {
+    image,
+    name,
+    _id,
+    price,
+  } = item;
 
-  const { loading, data } = useQuery(QUERY_ITEMS);
+  const { cart } = state
 
-  useEffect(() => {
-    if (data) {
+  const addToCart = () => {
+    const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+    if (itemInCart) {
       dispatch({
-        type: UPDATE_ITEMS,
-        items: data.items,
+        type: UPDATE_CART_QUANTITY,
+        _id: _id,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
       });
-      data.items.forEach((item) => {
-        idbPromise('items', 'put', item);
+      idbPromise('cart', 'put', {
+        ...itemInCart,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
       });
-    } else if (!loading) {
-      idbPromise('items', 'get').then((items) => {
-        dispatch({
-          type: UPDATE_ITEMS,
-          items: items,
-        });
+    } else {
+      dispatch({
+        type: ADD_TO_CART,
+        item: { ...item, purchaseQuantity: 1 }
       });
+      idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
     }
-  }, [data, loading, dispatch]);
-
-  function filterItems() {
-    if (!currentCategory) {
-      return state.items;
-    }
-
-    return state.items.filter(
-      (item) => item.category._id === currentCategory
-    );
   }
 
   return (
-    <div>
-      <h2>Our Menu Items:</h2>
-          {filterItems().map((item) => 
-
-        <div key={item._id}>
-              <p>{item.name}</p>
-              <p>{item.price}</p>
-              <p>{item.description}</p>
-        </div>
-          
-          )}
+    <div className="card px-1 py-1">
+      <Link to={`/items/${_id}`}>
+        <img
+          alt={name}
+          // src={`/images/${image}`}
+        />
+        <p>{name}</p>
+      </Link>
+      <div>
+        <span>${price}</span>
+      </div>
+      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }

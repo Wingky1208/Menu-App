@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+// import { Card } from 'react-bootstrap';
 
 
 function Footer(props) {
   return (
 
-    <Card className="text-center">
+    // <Card className="text-center">
 
       <div>
         &copy; {new Date().getFullYear()} All Rights Reserved. Designed &amp; developed by <a href="https://github.com/abdallajama201" target="blank">Abdalla
@@ -14,7 +14,7 @@ function Footer(props) {
 
       </div>
 
-    </Card>
+    // </Card>
 
   )
 }
