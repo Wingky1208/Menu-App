@@ -11,8 +11,9 @@ const typeDefs = gql`
     description: String
     image: String
     price: Float
-    rating: Rating
     category: Category
+    thumbsUp: Float
+    thumbsDown: Float
   }
   type Order {
     _id: ID
@@ -52,6 +53,7 @@ const typeDefs = gql`
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     addOrder(items: [ID]!): Order
     updateUser(firstName: String, lastName: String, email: String, password: String): User
+    updateItem(_id: ID thumbsUp: Float, thumbsDown: Float): Item
     login(email: String!, password: String!): Auth
   }
 `;

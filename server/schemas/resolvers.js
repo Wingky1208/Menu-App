@@ -127,6 +127,10 @@ const resolvers = {
             throw new AuthenticationError('Not logged in');
         },
 
+        updateItem: async (parent, args, context) => {
+            return await Item.findByIdAndUpdate(args._id, args,{ new: true });
+        },
+
 
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
