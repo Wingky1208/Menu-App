@@ -60,13 +60,13 @@ function Item(item) {
     });
   }
 
-  const addThumbsUp = () => {
-    thumbsUp.value += thumbsUp.value
-  }
+  // const addThumbsUp = () => {
+  //   thumbsUp.value += thumbsUp.value
+  // }
 
-  const addThumbsDown = () => {
-    thumbsDown.value += thumbsDown.value
-  }
+  // const addThumbsDown = () => {
+  //   thumbsDown.value += thumbsDown.value
+  // }
 
   return (
     <div className="card px-1 py-1">
@@ -77,7 +77,7 @@ function Item(item) {
         />
         <p>{name}</p>
       </Link>
-      <div onClick={addThumbsUp}>
+      {/* <div onClick={addThumbsUp}>
         <span
           role="img"
           aria-label="thumbsUp"
@@ -94,7 +94,7 @@ function Item(item) {
           👎🏻
         </span>
         <span>{thumbsDown}</span>
-      </div>
+      </div> */}
       <div>
         <span>${price}</span>
       </div>
