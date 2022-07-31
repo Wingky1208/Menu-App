@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { useMutation } from '@apollo/client';
+import { UPDATE_ITEM } from '../../utils/mutations';
+import React, { useEffect } from 'react';
 
 function Item(item) {
   const [state, dispatch] = useStoreContext();
@@ -36,6 +39,25 @@ function Item(item) {
       });
       idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
     }
+  }
+  
+  const [updateItem] = useMutation(UPDATE_ITEM);
+  const addThumbsUp = async () => {
+    const mutationResponse = await updateItem({
+      variables: {
+        id: _id,
+        thumbsUp: thumbsUp + 1,
+      },
+    });
+  }
+
+  const addThumbsDown = async () => {
+    const mutationResponse = await updateItem({
+      variables: {
+        id: _id,
+        thumbsDown: thumbsDown + 1,
+      },
+    });
   }
 
   const addThumbsUp = () => {
@@ -76,6 +98,11 @@ function Item(item) {
       <div>
         <span>${price}</span>
       </div>
+        <p onClick={addThumbsUp}>👍 {thumbsUp}</p>
+        <p onClick={addThumbsDown}>👎 {thumbsDown}</p>
+      <div>
+      </div>
+      
       <button onClick={addToCart}>Add to cart</button>
     </div>
   );

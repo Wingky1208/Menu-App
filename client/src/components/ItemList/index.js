@@ -54,6 +54,8 @@ function ProductList() {
               image={item.image}
               name={item.name}
               price={item.price}
+              thumbsUp={item.thumbsUp}
+              thumbsDown={item.thumbsDown}
             />
           ))}
         </div>

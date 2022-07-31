@@ -51,5 +51,14 @@ export const ADD_USER = gql`
         _id
       }
     }
+  }  
+`;
+
+export const UPDATE_ITEM = gql`
+mutation updateItem($thumbsUp: Float, $thumbsDown: Float, $id: ID) {
+  updateItem(thumbsUp: $thumbsUp, thumbsDown: $thumbsDown, _id: $id) {
+    thumbsUp
+    thumbsDown
   }
+}
 `;

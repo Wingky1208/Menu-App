@@ -11,10 +11,8 @@ export const QUERY_ITEMS = gql`
       category {
         _id
       }
-      rating{
-        thumbsUp
-        thumbsDown
-      }
+      thumbsUp
+      thumbsDown
     }
   }
 `;
