@@ -107,7 +107,7 @@ function Detail() {
           />
         </div>
       ) : null}
-      <Cart />
+
     </>
   );
 }

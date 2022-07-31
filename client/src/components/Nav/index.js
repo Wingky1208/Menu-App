@@ -4,13 +4,13 @@ import Cart from "../Cart";
 
 function Nav() {
   function showNavigation() {
-    
+
 
     if (Auth.loggedIn()) {
       return (
         <ul>
           <li>
-            <Link to="/profile">
+            <Link to="/Profile">
               Profile
             </Link>
           </li>
