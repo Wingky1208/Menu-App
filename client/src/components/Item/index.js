@@ -11,6 +11,8 @@ function Item(item) {
     name,
     _id,
     price,
+    thumbsUp,
+    thumbsDown,
   } = item;
 
   const { cart } = state
@@ -36,15 +38,41 @@ function Item(item) {
     }
   }
 
+  const addThumbsUp = () => {
+    thumbsUp.value += thumbsUp.value
+  }
+
+  const addThumbsDown = () => {
+    thumbsDown.value += thumbsDown.value
+  }
+
   return (
     <div className="card px-1 py-1">
       <Link to={`/items/${_id}`}>
         <img
           alt={name}
-          // src={`/images/${image}`}
+        // src={`/images/${image}`}
         />
         <p>{name}</p>
       </Link>
+      <div onClick={addThumbsUp}>
+        <span
+          role="img"
+          aria-label="thumbsUp"
+        >
+          👍🏻
+        </span>
+      </div>
+      <div onClick={addThumbsDown}>
+        <span>{thumbsUp}</span>
+        <span
+          role="img"
+          aria-label="thumbsDown"
+        >
+          👎🏻
+        </span>
+        <span>{thumbsDown}</span>
+      </div>
       <div>
         <span>${price}</span>
       </div>

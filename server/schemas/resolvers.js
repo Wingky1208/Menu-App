@@ -1,7 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Item, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const stripe = require('stripe')('sk_test_51LReexIhTfAGHhtGUZg2u65qoxL1VXTwz0qGDvm0Gv6Dwfhdd4jWV73l2EFaqKCJVhg6j5dLUKQo1YJvRHsyafUW00z1T8mAc7');
 
 const resolvers = {
     Query: {
@@ -61,7 +61,7 @@ const resolvers = {
         //stripe
         checkout: async (parent, args, context) => {
             const url = new URL(context.headers.referer).origin;
-            const order = new Order({ products: args.items });
+            const order = new Order({ items: args.items });
             const line_items = [];
 
             const { items } = await order.populate('items');
