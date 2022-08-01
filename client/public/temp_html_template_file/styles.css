@@ -19,7 +19,8 @@ html, body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    height: 100%;
+    background-color: pink;
 }
 
 header{
@@ -47,5 +48,19 @@ footer{
 }
 
 footer section{
+    
+}
+
+#banner{
+    background-color: black;
+    color: white;
+}
+
+#top_ranked{
+    background-color: green;
+}
+
+.content{
+    height: 100%;
     
 }
