@@ -31,8 +31,25 @@ header{
 
 header section{
     background-color: var(--second-accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+header section *{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 36px;
+    height: 36px;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
 main{
     background-color: var(--main-bg-color);
     flex: 1;
@@ -65,5 +82,6 @@ footer section{
 .content{
     height: 100%;
     max-width: 1400px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding: 0 20px;   
 }
