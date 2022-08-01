@@ -1,5 +1,5 @@
 const db = require('../connection');
-const path = '../public/images/';
+const path = '';
 /*
 const categories = require('./connection');
 const ${path}items_appetizers = require('./connection');

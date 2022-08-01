@@ -41,7 +41,7 @@ const CartItem = ({ item }) => {
             <div>
                 <img
                     src={`/images/${item.image}`}
-                    alt=""
+                    alt={item.name}
                 />
             </div>
             <div>
