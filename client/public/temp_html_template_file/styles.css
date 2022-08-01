@@ -5,17 +5,47 @@
     --second-accent-color: #08e9e6;
 }
 
+a, u{
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color: initial;
+    text-decoration: none;
+}
+
 html, body{
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
 }
 
 header{
-
+    background-color: var(--first-accent-color);
+    flex: 0 0 100px;
 }
 
 header section{
-
+    background-color: var(--second-accent-color);
 }
 
 main{
+    background-color: var(--main-bg-color);
+    flex: 1;
+}
+
+main section{
+    background-color: var(--main-light-color);
+}
+
+footer{
+    background-color: orangered;
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+footer section{
+    
 }
