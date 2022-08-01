@@ -19,7 +19,6 @@ html, body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     background-color: pink;
 }
@@ -74,6 +73,7 @@ footer section{
 #banner{
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 .content{
@@ -91,8 +91,8 @@ footer section{
     background-color:purple;
     width: 100%;
     max-width: 33.333%;
-    height: 100%;
-    min-height: 100px;
+    min-height: 300px;
+    overflow: hidden;
 }
 
 .item_card_TD img{
@@ -104,4 +104,8 @@ footer section{
     width: 100px;
     height: 75px;
     background-color: pink;
+}
+
+video{
+    width: 100%;
 }
