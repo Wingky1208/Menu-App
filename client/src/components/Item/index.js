@@ -4,7 +4,7 @@ import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import { useMutation } from '@apollo/client';
 import { UPDATE_ITEM } from '../../utils/mutations';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 
 function Item(item) {
   const [state, dispatch] = useStoreContext();
@@ -41,35 +41,37 @@ function Item(item) {
     }
   }
   
+  const [tUp, setTUP] = useState(thumbsUp);
+  
   const [updateItem] = useMutation(UPDATE_ITEM);
   const addThumbsUp = async () => {
-    const mutationResponse = await updateItem({
-      variables: {
-        id: _id,
-        thumbsUp: thumbsUp + 1,
-      },
-    });
+    if(tUp === thumbsUp) {
+      await updateItem({
+        variables: {
+          id: _id,
+          thumbsUp: tUp + 1,
+        },
+      });
+      setTUP(tUp + 1)
+    }
   }
+  
+  const [tDown, setTDown] = useState(thumbsDown);
 
   const addThumbsDown = async () => {
-    const mutationResponse = await updateItem({
-      variables: {
-        id: _id,
-        thumbsDown: thumbsDown + 1,
-      },
-    });
+    if(tDown === thumbsDown) {
+      await updateItem({
+        variables: {
+          id: _id,
+          thumbsDown: tDown + 1,
+        },
+      });
+      setTDown(tDown + 1)
+    }
   }
 
-  // const addThumbsUp = () => {
-  //   thumbsUp.value += thumbsUp.value
-  // }
-
-  // const addThumbsDown = () => {
-  //   thumbsDown.value += thumbsDown.value
-  // }
-
   return (
-    <div className="card px-1 py-1">
+    <div>
       <Link to={`/items/${_id}`}>
         <img
           alt={name}
@@ -77,29 +79,11 @@ function Item(item) {
         />
         <p>{name}</p>
       </Link>
-      {/* <div onClick={addThumbsUp}>
-        <span
-          role="img"
-          aria-label="thumbsUp"
-        >
-          👍🏻
-        </span>
-      </div>
-      <div onClick={addThumbsDown}>
-        <span>{thumbsUp}</span>
-        <span
-          role="img"
-          aria-label="thumbsDown"
-        >
-          👎🏻
-        </span>
-        <span>{thumbsDown}</span>
-      </div> */}
       <div>
         <span>${price}</span>
       </div>
-        <p onClick={addThumbsUp}>👍 {thumbsUp}</p>
-        <p onClick={addThumbsDown}>👎 {thumbsDown}</p>
+        <p onClick={addThumbsUp}>👍 {tUp}</p>
+        <p onClick={addThumbsDown}>👎 {tDown}</p>
       <div>
       </div>
       
