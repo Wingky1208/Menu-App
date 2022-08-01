@@ -26,7 +26,7 @@ html, body{
 
 header{
     background-color: var(--first-accent-color);
-    flex: 0 0 100px;
+    flex: 0 0 50px;
 }
 
 header section{
