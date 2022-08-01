@@ -9,7 +9,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
-const stripePromise = loadStripe('pk_test_51LReexIhTfAGHhtGiPY0YGTFCdwIf70vlq9AEaI8YEXLs3dIfGGJ5BP9mdX7bpjrwYqfjD70TRIxxIKLW3DFKtem00WdammY7S');
+const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
     const [state, dispatch] = useStoreContext();
@@ -64,7 +64,6 @@ const Cart = () => {
         getCheckout({
             variables: { items: productIds },
         });
-        console.log(productIds)
     }
 
     if (!state.cartOpen) {

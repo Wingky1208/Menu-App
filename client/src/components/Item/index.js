@@ -19,7 +19,7 @@ function Item(item) {
   } = item;
 
   const { cart } = state
-
+  
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === _id)
     if (itemInCart) {
@@ -73,7 +73,7 @@ function Item(item) {
       <Link to={`/items/${_id}`}>
         <img
           alt={name}
-        // src={`/images/${image}`}
+          src={`/images/${image}`}
         />
         <p>{name}</p>
       </Link>
