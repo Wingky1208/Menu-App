@@ -5,6 +5,11 @@
     --second-accent-color: #08e9e6;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
 a, u{
     text-decoration: none;
 }
@@ -87,23 +92,26 @@ footer section{
 }
 
 .item_card_TD{
-    display:flex;
     background-color:purple;
     width: 100%;
     max-width: 33.333%;
-    min-height: 300px;
-    overflow: hidden;
+    display: flex;
 }
 
 .item_card_TD img{
-    width: 100px;
-    height: 75px;
+    width: 200px;
+    height: inherit;
 }
 
 .item_card_TD div{
-    width: 100px;
-    height: 75px;
+    width: 100%;
     background-color: pink;
+    padding: 10px;
+}
+
+.item_card_TD p{
+    max-height: 100px;
+    overflow: hidden;
 }
 
 video{
