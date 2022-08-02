@@ -14,7 +14,7 @@ function Profile() {
 
   return (
     <>
-      <div>
+      <div className="container-login" >
         <Link to="/">← Back to Items</Link>
 
         {user ? (
@@ -31,7 +31,7 @@ function Profile() {
                   {order.items.map(({ _id, image, name, price }, index) => (
                     <div key={index}>
                       <Link to={`/items/${_id}`}>
-                        <img alt={name} 
+                        <img alt={name}
                         // src={`/images/${image}`} 
                         />
                         <p>{name}</p>

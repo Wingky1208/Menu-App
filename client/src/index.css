@@ -108,6 +108,7 @@ footer section{
   background-color: black;
 }
 
+
 .item_card_TD{
   flex: 1;
   background-color: rgba(0,0,0,0.8);
@@ -156,4 +157,26 @@ button{
       background-color: blue;
       margin-right: 50%;        
   }*/
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+}
+
+
+
+.container-login {
+  width: 85%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--second-accent-color);
+
+}
+
+.m-10 {
+  margin: 10px;
 }
