@@ -12,6 +12,7 @@ function Item(item) {
   const {
     image,
     name,
+    description,
     _id,
     price,
     thumbsUp,
@@ -71,25 +72,24 @@ function Item(item) {
   }
 
   return (
-    <div>
+    <div className="item_card_TD">
       <Link to={`/items/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
-        />
-        <p>{name}</p>
+        />        
       </Link>
       <div>
-        <span>${price}</span>
-      </div>
+        <h3>${name} ${price}</h3>
+        <hr />
+        <p>{description}</p>
         <p onClick={addThumbsUp}>👍 {tUp}</p>
         <p onClick={addThumbsDown}>👎 {tDown}</p>
-      <div>
+        <button onClick={addToCart}>Add to cart</button>
       </div>
-      
-      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
+
 }
 
 export default Item;

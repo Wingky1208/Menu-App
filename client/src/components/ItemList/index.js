@@ -53,6 +53,7 @@ function ProductList() {
               _id={item._id}
               image={item.image}
               name={item.name}
+              description={item.description}
               price={item.price}
               thumbsUp={item.thumbsUp}
               thumbsDown={item.thumbsDown}

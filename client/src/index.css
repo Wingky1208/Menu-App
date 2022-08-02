@@ -97,12 +97,12 @@ footer section{
   margin: 0 auto;  
 }
 
-#top_ranked{
+.top_ranked{
   background-color: green;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  background-image: url(./pattern.png);
+  justify-content: flex-start;
+  /*background-image: url(./pattern.png);*/
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-color: black;
