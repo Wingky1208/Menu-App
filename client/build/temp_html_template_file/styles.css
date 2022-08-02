@@ -1,25 +1,33 @@
-:root{
+:root {
     --main-bg-color: #1e0500;
     --main-light-color: #c2c2c2;
     --first-accent-color: #c32222;
     --second-accent-color: #08e9e6;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
 
-a, u{
+a,
+u {
     text-decoration: none;
 }
 
-a:hover, a:active{
+a:hover,
+a:active {
     color: initial;
     text-decoration: none;
 }
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,17 +36,17 @@ html, body{
     background-color: pink;
 }
 
-header{
+header {
     background-color: var(--first-accent-color);
     flex: 0 0 50px;
 }
 
-header section{
-    background-color: var(--second-accent-color);   
-    justify-content: space-between;    
+header section {
+    background-color: var(--second-accent-color);
+    justify-content: space-between;
 }
 
-header *{
+header * {
     background-color: purple;
     display: flex;
     align-items: center;
@@ -47,7 +55,7 @@ header *{
     white-space: nowrap;
 }
 
-header img{
+header img {
     width: 36px;
     height: 36px;
 }
@@ -55,71 +63,77 @@ header img{
 #logo:hover {
     transform: rotate(360deg);
 }
-main{
+
+main {
     background-color: var(--main-bg-color);
     flex: 1;
 }
 
-main section{
+main section {
     background-color: var(--main-light-color);
 }
 
-footer{
+footer {
     background-color: orangered;
     height: 100px;
     flex: 0 0 100px;
 }
 
-footer section{
+footer section {
     background-color: brown;
-    
+
 }
 
-#banner{
+#banner {
     background-color: black;
     color: white;
     overflow: hidden;
 }
 
-.content{
+.content {
     height: 100%;
     max-width: 1400px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
-#top_ranked{
+#top_ranked {
     background-color: green;
     display: flex;
     flex-wrap: wrap;
 }
 
-.item_card_TD{
+.item_card_TD {
     flex: 1 0 400px;
-    background-color:purple;
+    background-color: purple;
     min-width: 33.3333%;
     margin: 10px;
 }
 
-.item_card_TD img{
+.item_card_TD img {
     width: 20%;
 }
 
-.item_card_TD div{
+.item_card_TD div {
     width: 80%;
     background-color: pink;
 }
 
-.item_card_TD p{
+.item_card_TD p {
     max-height: 100px;
     overflow: hidden;
 }
 
-video{
+video {
     width: 100%;
 }
 
-button{
+button {
     background-color: #08e9e6;
     color: #1e0500;
     border: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
 }

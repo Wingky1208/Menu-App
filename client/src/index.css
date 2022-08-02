@@ -8,7 +8,29 @@ body {
   background-color: green;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --main-bg-color: #1e0500;
+  --main-light-color: #c2c2c2;
+  --first-accent-color: #c32222;
+  --second-accent-color: #08e9e6;
+}
+
+.container-login {
+  width: 85%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--second-accent-color);
+
+}
+
+.m-10 {
+  margin: 10px;
 }

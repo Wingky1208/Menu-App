@@ -17,6 +17,10 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.9.3",
+    "react-bootstrap": "^2.4.0",
     "react-pageflip": "^2.0.3"
   }
 }
