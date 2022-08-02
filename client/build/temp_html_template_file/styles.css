@@ -3,6 +3,7 @@
     --main-light-color: #c2c2c2;
     --first-accent-color: #c32222;
     --second-accent-color: #08e9e6;
+    --header_height: 50px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -22,18 +23,20 @@ a:hover, a:active{
 }
 
 html, body{
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0;
+    padding:0;
     background-color: var(--main-bg-color);
 }
 
 header{
     background-color: rgba(0,0,0,0.8);
-    flex: 0 0 50px;
-    display: fixed;
+    flex:0;
+    width: 100%;
+    position: fixed;
+    height: var(--header_height);
 }
 
 header section{  
@@ -58,6 +61,7 @@ header img{
 }
 main{
     flex: 1;
+    margin-top: var(--header_height);
 }
 
 main section{
@@ -65,7 +69,6 @@ main section{
 
 footer{
     background-color: rgba(0,0,0,0.8);
-    height: 100px;
     flex: 0 0 100px;
 }
 
