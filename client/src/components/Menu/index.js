@@ -45,12 +45,16 @@ function Menu() {
   return (
     <div>
         <div>Choose a Menu</div>
-       
-        <HTMLFlipBook width={300} height={500}>
-        {categories.map((item) => (           
-            <div className="demoPage">{item.name}</div>            
-        ))}
-        </HTMLFlipBook>
+        <select onClick={(e) => handleClick(e.target.value)}>
+        {categories.map((item) => (
+            <option
+            key={item._id}
+            value={item._id}
+            >
+            {item.name}
+            </option>
+            ))}
+        </select>
     </div>
   );
 }
