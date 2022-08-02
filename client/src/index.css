@@ -11,11 +11,11 @@ code {
   --header_height: 50px;
 }
 
-h1,h2,h3,h4,h5,h6{
+/* h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
   color: var(--main-light-color);
-}
+} */
 
 a, u{
   text-decoration: none;
@@ -41,7 +41,7 @@ html, body{
   background-color: var(--main-bg-color);
 }
 
-header{
+/* header{
   background-color: rgba(0,0,0,0.8);
   flex:0;
   width: 100%;
@@ -51,19 +51,19 @@ header{
 
 header section{  
   justify-content: space-between;    
-}
+} */
 
-header *{
+/* Nav *{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 2px;
   white-space: nowrap;
-}
+} */
 
-header img{
-  width: 36px;
-  height: 36px;
+img {
+  width: 80px;
+  height: 80px;
 }
 
 #logo:hover {
@@ -97,12 +97,12 @@ footer section{
   margin: 0 auto;  
 }
 
-#top_ranked{
+.top_ranked{
   background-color: green;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  background-image: url(./pattern.png);
+  /* background-image: url(/images/pattern.png); */
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-color: black;
@@ -112,13 +112,14 @@ footer section{
 .item_card_TD{
   flex: 1;
   background-color: rgba(0,0,0,0.8);
-  min-width:400px;
+  min-width:300px;
   margin: 10px;
   border: 2px ridge #222;
 }
 
 .item_card_TD img{
-  width: 20%;
+  width: 120px;
+  height: 120px;
 }
 
 .item_card_TD div{
@@ -145,7 +146,7 @@ button{
 }
 
 
-@media only screen and (max-width: 1288px) {
+/* @media only screen and (max-width: 1288px) { */
   /*
   .item_card_TD:nth-last-child(-n+3){
       max-width:48%;
@@ -165,6 +166,10 @@ code {
 
 }
 
+select {
+  min-width: 400px;
+  min-height: 80x;
+}
 
 
 .container-login {
@@ -173,7 +178,7 @@ code {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: var(--second-accent-color);
+  background-color: #b53b45;
 
 }
 

@@ -289,7 +289,7 @@ db.once('open', async () => {
         name: 'Caramelized Onions',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -297,7 +297,7 @@ db.once('open', async () => {
         name: 'Thousand Island Dressing',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[2]._id
       },
@@ -305,7 +305,7 @@ db.once('open', async () => {
         name: 'Bacon Jam',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -313,7 +313,7 @@ db.once('open', async () => {
         name: 'Guacamole',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -321,7 +321,7 @@ db.once('open', async () => {
         name: 'Sauteed Mushrooms',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -329,7 +329,7 @@ db.once('open', async () => {
         name: 'Tomato Jam',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -337,7 +337,7 @@ db.once('open', async () => {
         name: 'Dijon Mustard',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[2]._id
       },
@@ -345,7 +345,7 @@ db.once('open', async () => {
         name: 'Bourbon Barbecue Sauce',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[2]._id
       },
@@ -353,7 +353,7 @@ db.once('open', async () => {
         name: 'Onion Jam',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -361,7 +361,7 @@ db.once('open', async () => {
         name: 'Blue Cheese Sauce',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[2]._id
       },
@@ -369,7 +369,7 @@ db.once('open', async () => {
         name: 'Homemade Ketchup',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[2]._id
       },
@@ -377,7 +377,7 @@ db.once('open', async () => {
         name: 'Pepperoni',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[3]._id
       },
@@ -385,7 +385,7 @@ db.once('open', async () => {
         name: 'Mushroom',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[3]._id
       },
@@ -393,7 +393,7 @@ db.once('open', async () => {
         name: 'Extra cheese',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[3]._id
       },
@@ -401,7 +401,7 @@ db.once('open', async () => {
         name: 'Sausage',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.00,
         category: categories[3]._id
       },
@@ -409,7 +409,7 @@ db.once('open', async () => {
         name: 'Onion',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[3]._id
       },
@@ -417,7 +417,7 @@ db.once('open', async () => {
         name: 'Black olives',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[3]._id
       },
@@ -425,7 +425,7 @@ db.once('open', async () => {
         name: 'Green pepper',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[3]._id
       },
@@ -433,7 +433,7 @@ db.once('open', async () => {
         name: 'Fresh garlic',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.00,
         category: categories[3]._id
       },
@@ -633,7 +633,7 @@ db.once('open', async () => {
         name: 'sprite',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[6]._id
       },
@@ -649,7 +649,7 @@ db.once('open', async () => {
         name: 'root beer',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[6]._id
       },
@@ -657,7 +657,7 @@ db.once('open', async () => {
         name: 'orange crush',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[6]._id
       },
@@ -673,7 +673,7 @@ db.once('open', async () => {
         name: 'Water',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 0.00,
         category: categories[7]._id
       },
@@ -681,7 +681,7 @@ db.once('open', async () => {
         name: 'Coconut Water',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[7]._id
       },
@@ -705,7 +705,7 @@ db.once('open', async () => {
         name: 'peach smoothie',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.99,
         category: categories[7]._id
       },
@@ -721,7 +721,7 @@ db.once('open', async () => {
         name: 'apple juice',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.99,
         category: categories[7]._id
       },
@@ -745,16 +745,31 @@ db.once('open', async () => {
     password: 'password12345'
   });
   
+  const items = await Item.find({});
+
   await User.create({
     firstName: 'Winkey',
     lastName: 'Liang',
     email: 'wL@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ]
+      },
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ],
+      }
+    ]
   });
   
-  const items = await Item.find({});
-
-
   await User.create({
     firstName: 'Abdalla',
     lastName: 'Jama',
@@ -782,7 +797,23 @@ db.once('open', async () => {
     firstName: 'James',
     lastName: 'Fidlin',
     email: 'jf@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ]
+      },
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ],
+      }
+    ]
   });
 
   console.log('users seeded');

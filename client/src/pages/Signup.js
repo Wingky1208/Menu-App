@@ -37,7 +37,7 @@ function Signup() {
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="m-10">
-          <label htmlFor="firstName">First Name:</label>
+          <label htmlFor="firstName" className='text-white' >First Name:</label>
           <input
             placeholder="First"
             name="firstName"
@@ -47,7 +47,7 @@ function Signup() {
           />
         </div>
         <div className="m-10">
-          <label htmlFor="lastName">Last Name:</label>
+          <label htmlFor="lastName" className='text-white'>Last Name:</label>
           <input
             placeholder="Last"
             name="lastName"
@@ -57,7 +57,7 @@ function Signup() {
           />
         </div>
         <div className="m-10">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className='text-white'>Email:</label>
           <input
             placeholder="youremail@email.com"
             name="email"
@@ -67,7 +67,7 @@ function Signup() {
           />
         </div>
         <div className="m-10">
-          <label htmlFor="pwd">Password:</label>
+          <label htmlFor="pwd" className='text-white'>Password:</label>
           <input
             placeholder="********"
             name="password"
