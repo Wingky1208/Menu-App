@@ -91,6 +91,7 @@ footer section{
     background-color: green;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
     background-image: url(./pattern.png);
     background-repeat: repeat-y;
     background-size: 100% auto;
@@ -98,10 +99,11 @@ footer section{
 }
 
 .item_card_TD{
-    flex: 1 0 400px;
-    background-color:purple;
-    min-width: 33.3333%;
+    flex: 1;
+    background-color: rgba(0,0,0,0.8);
+    min-width:400px;
     margin: 10px;
+    border: 2px ridge #222;
 }
 
 .item_card_TD img{
@@ -130,3 +132,21 @@ button{
     min-height: 40px;
 
 }
+
+
+@media only screen and (max-width: 1288px) {
+    /*
+    .item_card_TD:nth-last-child(-n+3){
+        max-width:48%;
+        background-color: green;
+    }*/
+/*
+    .item_card_TD:last-child{
+        max-width:50%;
+        background-color: blue;
+        margin-right: 50%;        
+    }*/
+}
+
+
+
