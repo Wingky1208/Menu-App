@@ -1,14 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: green;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root{
+  --main-bg-color: #1e0500;
+  --main-light-color: #c2c2c2;
+  --first-accent-color: #c32222;
+  --second-accent-color: #08e9e6;
+  --header_height: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  color: var(--main-light-color);
+}
+
+a, u{
+  text-decoration: none;
+  color: var(--main-light-color);
+}
+
+a:hover, a:active{
+  color: initial;
+  text-decoration: none;
+}
+
+html, body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  background-color: var(--main-bg-color);
+}
+
+header{
+  background-color: rgba(0,0,0,0.8);
+  flex:0;
+  width: 100%;
+  position: fixed;
+  height: var(--header_height);
+}
+
+header section{  
+  justify-content: space-between;    
+}
+
+header *{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+
+header img{
+  width: 36px;
+  height: 36px;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+}
+main{
+  flex: 1;
+  margin-top: var(--header_height);
+}
+
+main section{
+}
+
+footer{
+  background-color: rgba(0,0,0,0.8);
+  flex: 0 0 100px;
+}
+
+footer section{    
+}
+
+#banner{
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.content{
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;  
+}
+
+#top_ranked{
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-image: url(./pattern.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: black;
+}
+
+.item_card_TD{
+  flex: 1;
+  background-color: rgba(0,0,0,0.8);
+  min-width:400px;
+  margin: 10px;
+  border: 2px ridge #222;
+}
+
+.item_card_TD img{
+  width: 20%;
+}
+
+.item_card_TD div{
+  width: 80%;
+  background-color: pink;
+}
+
+.item_card_TD p{
+  max-height: 100px;
+  overflow: hidden;
+}
+
+video{
+  width: 100%;
+}
+
+button{
+  background-color: #08e9e6;
+  color: #1e0500;
+  border: none;
+  cursor: pointer;
+  min-height: 40px;
+
+}
+
+
+@media only screen and (max-width: 1288px) {
+  /*
+  .item_card_TD:nth-last-child(-n+3){
+      max-width:48%;
+      background-color: green;
+  }*/
+/*
+  .item_card_TD:last-child{
+      max-width:50%;
+      background-color: blue;
+      margin-right: 50%;        
+  }*/
 }
