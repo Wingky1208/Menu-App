@@ -47,6 +47,7 @@ header{
   width: 100%;
   position: fixed;
   height: var(--header_height);
+  z-index: 50;
 }
 
 header section{  
@@ -71,7 +72,7 @@ header img{
 }
 main{
   flex: 1;
-  margin-top: var(--header_height);
+  padding-top: 70px;
 }
 
 main section{
@@ -80,6 +81,8 @@ main section{
 footer{
   background-color: rgba(0,0,0,0.8);
   flex: 0 0 100px;
+  height: 100px;
+  margin-top: 20px;
 }
 
 footer section{    

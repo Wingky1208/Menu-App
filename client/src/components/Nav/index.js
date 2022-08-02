@@ -8,22 +8,18 @@ function Nav() {
 
     if (Auth.loggedIn()) {
       return (
-        <ul>
-          <li>
+        <span>
             <NavLink to="/Profile">
               Profile
             </NavLink>
-          </li>
-          <li>
+          
             {/* this is not using the NavLink component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
-          </li>
-          <li>
+          
             <Cart />
-          </li>
-        </ul>
+        </span>  
       );
     } else {
       return (

@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "react-html5video": "^2.5.1",
     "react-pageflip": "^2.0.3"
   }
 }

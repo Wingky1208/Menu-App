@@ -37,6 +37,7 @@ header{
     width: 100%;
     position: fixed;
     height: var(--header_height);
+    z-index: 50;
 }
 
 header section{  
