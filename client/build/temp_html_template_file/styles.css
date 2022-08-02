@@ -3,6 +3,7 @@
     --main-light-color: #c2c2c2;
     --first-accent-color: #c32222;
     --second-accent-color: #08e9e6;
+    --header_height: 50px;
 }
 
 h1,
@@ -13,11 +14,13 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    color: var(--main-light-color);
 }
 
 a,
 u {
     text-decoration: none;
+    color: var(--main-light-color);
 }
 
 a:hover,
@@ -26,28 +29,30 @@ a:active {
     text-decoration: none;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
+
+html, body{
+
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: pink;
+    margin: 0;
+    padding:0;
+    background-color: var(--main-bg-color);
 }
 
-header {
-    background-color: var(--first-accent-color);
-    flex: 0 0 50px;
+header{
+    background-color: rgba(0,0,0,0.8);
+    flex:0;
+    width: 100%;
+    position: fixed;
+    height: var(--header_height);
 }
 
-header section {
-    background-color: var(--second-accent-color);
-    justify-content: space-between;
+header section{  
+    justify-content: space-between;    
 }
 
-header * {
-    background-color: purple;
+header *{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -63,25 +68,20 @@ header img {
 #logo:hover {
     transform: rotate(360deg);
 }
-
-main {
-    background-color: var(--main-bg-color);
+main{
     flex: 1;
+    margin-top: var(--header_height);
 }
 
-main section {
-    background-color: var(--main-light-color);
+main section{
 }
 
-footer {
-    background-color: orangered;
-    height: 100px;
+footer{
+    background-color: rgba(0,0,0,0.8);
     flex: 0 0 100px;
 }
 
-footer section {
-    background-color: brown;
-
+footer section{    
 }
 
 #banner {
@@ -100,13 +100,19 @@ footer section {
     background-color: green;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    background-image: url(./pattern.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-color: black;
 }
 
-.item_card_TD {
-    flex: 1 0 400px;
-    background-color: purple;
-    min-width: 33.3333%;
+.item_card_TD{
+    flex: 1;
+    background-color: rgba(0,0,0,0.8);
+    min-width:400px;
     margin: 10px;
+    border: 2px ridge #222;
 }
 
 .item_card_TD img {
@@ -131,6 +137,24 @@ button {
     background-color: #08e9e6;
     color: #1e0500;
     border: none;
+    cursor: pointer;
+    min-height: 40px;
+
+}
+
+
+@media only screen and (max-width: 1288px) {
+    /*
+    .item_card_TD:nth-last-child(-n+3){
+        max-width:48%;
+        background-color: green;
+    }*/
+/*
+    .item_card_TD:last-child{
+        max-width:50%;
+        background-color: blue;
+        margin-right: 50%;        
+    }*/
 }
 
 .flex-row {
