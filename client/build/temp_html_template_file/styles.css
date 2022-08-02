@@ -56,15 +56,13 @@ header img{
     height: 36px;
 }
 
-#logo:hover {
-    transform: rotate(360deg);
-}
-main{
+
+.main{
     flex: 1;
     margin-top: var(--header_height);
 }
 
-main section{
+.main section{
 }
 
 footer{

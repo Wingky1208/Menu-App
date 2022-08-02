@@ -1,5 +1,5 @@
 import Auth from "../../utils/auth";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Cart from "../Cart";
 
 function Nav() {
@@ -10,12 +10,12 @@ function Nav() {
       return (
         <ul>
           <li>
-            <Link to="/Profile">
+            <NavLink to="/Profile">
               Profile
-            </Link>
+            </NavLink>
           </li>
           <li>
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+            {/* this is not using the NavLink component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
@@ -27,36 +27,35 @@ function Nav() {
       );
     } else {
       return (
-        <ul>
-          <li>
-            <Link to="/signup">
+      <span>
+            <NavLink to="/signup">
               Signup
-            </Link>
-          </li>
-          <li>
-            <Link to="/login">
+            </NavLink>
+         
+            <NavLink to="/login">
               Login
-            </Link>
-          </li>
-          <li>
+            </NavLink>
+         
             <Cart />
-          </li>
-        </ul>
+      </span>
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          Menu-app
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
+    <header>
+        <div className="content">
+            <NavLink to="/">
+                <img
+                  alt="home"
+                  src={`./logo.png`}
+                />
+                <h1>hUNGRY tIME</h1>
+            </NavLink>
+            <nav>
+              {showNavigation()}
+            </nav>
+        </div>
     </header>
   );
 }

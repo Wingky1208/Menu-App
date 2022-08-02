@@ -5,10 +5,15 @@ import Menu from "../components/Menu";
 
 const Home = () => {
   return (
-    <div className="container">
-      <Menu />
-      <ItemList />      
-    </div>
+    <main>
+        <section className="content">
+            <section id="banner">
+                <video autoplay muted loop src="./intro_video.mp4"></video>
+            </section>
+            <Menu />
+            <ItemList />      
+        </section>
+    </main>
   );
 };
 
