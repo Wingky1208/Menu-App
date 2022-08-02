@@ -89,24 +89,24 @@ footer section{
 
 #top_ranked{
     background-color: green;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .item_card_TD{
+    flex: 1 0 400px;
     background-color:purple;
-    width: 100%;
-    max-width: 33.333%;
-    display: flex;
+    min-width: 33.3333%;
+    margin: 10px;
 }
 
 .item_card_TD img{
-    width: 200px;
-    height: inherit;
+    width: 20%;
 }
 
 .item_card_TD div{
-    width: 100%;
+    width: 80%;
     background-color: pink;
-    padding: 10px;
 }
 
 .item_card_TD p{
@@ -116,4 +116,10 @@ footer section{
 
 video{
     width: 100%;
+}
+
+button{
+    background-color: #08e9e6;
+    color: #1e0500;
+    border: none;
 }
