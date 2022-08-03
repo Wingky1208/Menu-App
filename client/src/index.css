@@ -41,11 +41,9 @@ html, body{
   background-color: var(--main-bg-color);
 }
 
-#root{
+#root > div{
   display: flex;
   flex-direction: column;
-  background-color: pink;
-  min-height: 100%;
 }
 
 header{
@@ -80,7 +78,7 @@ header img{
 main{
   flex: 1;
   padding-top: 70px;
-  background-color: green;
+  min-height: 80vh;
 }
 
 main section{
@@ -113,7 +111,7 @@ footer section{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /*background-image: url(./pattern.png);*/
+  background-image: url(./pattern.png);
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-color: black;

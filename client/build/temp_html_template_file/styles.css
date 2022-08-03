@@ -103,20 +103,32 @@ footer section{
     min-width:400px;
     margin: 10px;
     border: 2px ridge #222;
+    display: flex;
+    max-height: 175px;
+    color: #c2c2c2;
 }
 
 .item_card_TD img{
-    width: 20%;
+    width:175px;
+    height:175px;
+    background-color: #1e0500;
 }
 
 .item_card_TD div{
     width: 80%;
-    background-color: pink;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item_card_TD p{
-    max-height: 100px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 
 video{
