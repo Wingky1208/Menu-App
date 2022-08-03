@@ -31,12 +31,16 @@ function Login() {
   };
 
   return (
-    <div className="container-login">
-      <Link to="/signup">← Go to Signup</Link>
-      <h2>Login</h2>
+    <main>
+        <section className="content">                
+        <Link to="/signup">← Go to Signup</Link>
+    <div className="form_style">
+      
+      <h1>Login</h1>
+      
       <form onSubmit={handleFormSubmit}>
-        <div className="m-10">
-          <label htmlFor="email">Email address:</label>
+        <div>
+          <label htmlFor="email">Email address : </label>
           <input
             placeholder="youremail@email.com"
             name="email"
@@ -45,8 +49,8 @@ function Login() {
             onChange={handleChange}
           />
         </div>
-        <div className="m-10">
-          <label htmlFor="pwd">Password:</label>
+        <div>
+          <label htmlFor="pwd">Password : </label>
           <input
             placeholder="********"
             name="password"
@@ -61,10 +65,12 @@ function Login() {
           </div>
         ) : null}
         <div>
-          <button type="submit">Submit</button>
+          <button className="form_submit" type="submit">Submit</button>
         </div>
       </form>
     </div>
+    </section>
+</main>
   );
 }
 

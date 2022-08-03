@@ -20,8 +20,8 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Appetizers' },
     { name: 'Mains' },    
-    { name: 'Burger Toppings'},
-    { name: 'Pizza Toppings'},
+    // { name: 'Burger Toppings'},
+    // { name: 'Pizza Toppings'},
     { name: 'Kids Menu' },
     { name: 'Desserts' },
     { name: 'Drinks' },
@@ -285,165 +285,165 @@ db.once('open', async () => {
         price: 13.99,
         category: categories[1]._id
       },
-      {
-        name: 'Caramelized Onions',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Thousand Island Dressing',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Bacon Jam',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Guacamole',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Sauteed Mushrooms',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Tomato Jam',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Dijon Mustard',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Bourbon Barbecue Sauce',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Onion Jam',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Blue Cheese Sauce',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[2]._id
-      },
-      {
-        name: 'Homemade Ketchup',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.50,
-        category: categories[2]._id
-      },
-      {
-        name: 'Pepperoni',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Mushroom',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Extra cheese',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Sausage',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 2.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Onion',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Black olives',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Green pepper',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[3]._id
-      },
-      {
-        name: 'Fresh garlic',
-        description:
-          '',
-        image: 'placeholder.jpg',
-        price: 1.00,
-        category: categories[3]._id
-      },
+      // {
+      //   name: 'Caramelized Onions',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Thousand Island Dressing',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Bacon Jam',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Guacamole',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Sauteed Mushrooms',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Tomato Jam',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Dijon Mustard',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Bourbon Barbecue Sauce',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Onion Jam',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Blue Cheese Sauce',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Homemade Ketchup',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.50,
+      //   category: categories[2]._id
+      // },
+      // {
+      //   name: 'Pepperoni',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Mushroom',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Extra cheese',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Sausage',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 2.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Onion',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Black olives',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Green pepper',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[3]._id
+      // },
+      // {
+      //   name: 'Fresh garlic',
+      //   description:
+      //     '',
+      //   image: '',
+      //   price: 1.00,
+      //   category: categories[3]._id
+      // },
       {
         name: 'Grilled cheese',
         description:
           'Mom\'s famous recipe made with American cheese & grilled to perfection',
         image: `${path}items_50.jpg`,
         price: 4.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Tomato soup',
@@ -451,7 +451,7 @@ db.once('open', async () => {
           'Roasted tomato soup made with roma tomatoes and red bell peppers is a tasty accompaniment to our grilled cheese!.',
         image: `${path}items_51.jpg`,
         price: 2.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Chicken fingers/ nuggets',
@@ -459,7 +459,7 @@ db.once('open', async () => {
           'Homemade chicken fingers marinated in buttermilk with a super crispy breaded exterior. The ultimate chicken tenders! ',
         image: `${path}items_52.jpg`,
         price: 4.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Flatbread pizza',
@@ -467,7 +467,7 @@ db.once('open', async () => {
           'Three flatbread pizza varieties are Cheese, Margherita and Chipotle Chicken and Bacon.',
         image: `${path}items_53.jpg`,
         price: 5.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Mac & cheese',
@@ -475,7 +475,7 @@ db.once('open', async () => {
           'A beloved classic any child would love!.',
         image: `${path}items_54.jpg`,
         price: 3.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Mini burgers',
@@ -483,7 +483,7 @@ db.once('open', async () => {
           'All-American sliders are cute, fun to make, and fun to eat.',
         image: `${path}items_55.jpg`,
         price: 3.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Mini pizzas',
@@ -491,7 +491,7 @@ db.once('open', async () => {
           'A wee Pizza, for your wee little one',
         image: `${path}items_56.jpg`,
         price: 3.99,
-        category: categories[4]._id
+        category: categories[2]._id
       },
       {
         name: 'Apple pie',
@@ -499,7 +499,7 @@ db.once('open', async () => {
           'What more can we say really, grab a fork and dig in!',
         image: `${path}items_57.jpg`,
         price: 5.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Pumpkin pie (a great choice during the Fall)',
@@ -507,7 +507,7 @@ db.once('open', async () => {
           'Good all year round!',
         image: `${path}items_58.jpg`,
         price: 5.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Giant chocolate chip cookies',
@@ -515,7 +515,7 @@ db.once('open', async () => {
           'Cookie?, check, GIANT COOKIE?, YES PLEASE!',
         image: `${path}items_59.jpg`,
         price: 4.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Banana split',
@@ -523,7 +523,7 @@ db.once('open', async () => {
           'Another blast from the past',
         image: `${path}items_60.jpg`,
         price: 4.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Molten lava cakes',
@@ -531,7 +531,7 @@ db.once('open', async () => {
           'Ozzing into your soul.',
         image: `${path}items_61.jpg`,
         price: 5.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Cinnamon rolls',
@@ -539,7 +539,7 @@ db.once('open', async () => {
           'Cinnamon roll made with warm dough, Cinnamon, topped with rich cream cheese frosting. It\'s classic for a reason.',
         image: `${path}items_62.jpg`,
         price: 4.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Cheesecake',
@@ -547,7 +547,7 @@ db.once('open', async () => {
           'Cheesecake, that is all.',
         image: `${path}items_63.jpg`,
         price: 7.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Baklava',
@@ -555,7 +555,7 @@ db.once('open', async () => {
           'Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.',
         image: `${path}items_64.jpg`,
         price: 7.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Lemon cake',
@@ -563,7 +563,7 @@ db.once('open', async () => {
           ' Made from scratch with real ingredients such as freshly squeezed lemon juice and lemon zest, this cake is full of flavor.',
         image: `${path}items_65.jpg`,
         price: 5.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Cannoli',
@@ -571,7 +571,7 @@ db.once('open', async () => {
           ' Delicious fluffy pastry filled with traditional Italian custard and your choice of Strawberry or Black Cherry sauce. Topped with fresh Black Cherries.',
         image: `${path}items_66.jpg`,
         price: 4.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Strawberry shortcake',
@@ -579,7 +579,7 @@ db.once('open', async () => {
           ' Fresh Whipped Cream Layered with Vanilla Sponge Cake and Fresh. Strawberries Garnished with Chocolate Dipping sause! mmmmmmmmmm',
         image: `${path}items_67.jpg`,
         price: 6.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'Apple Cobbler',
@@ -587,7 +587,7 @@ db.once('open', async () => {
           'This old-fashioned Apple Cobbler is one of our FAVORITE desserts. It\'s made with fresh apples in a cinnamon sauce.',
         image: `${path}items_68.jpg`,
         price: 5.99,
-        category: categories[5]._id
+        category: categories[3]._id
       },
       {
         name: 'kale and pineapple smoothie',
@@ -595,7 +595,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_69.jpg`,
         price: 5.99,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'spinach and blueberries smoothie',
@@ -603,7 +603,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_70.jpg`,
         price: 5.99,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'peach and cauliflower smoothie',
@@ -611,7 +611,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_71.jpg`,
         price: 5.99,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'strawberries and beets smoothie',
@@ -619,7 +619,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_72.jpg`,
         price: 5.99,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'coke',
@@ -627,7 +627,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_73.jpg`,
         price: 1.50,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'sprite',
@@ -635,7 +635,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 1.50,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'Coffee',
@@ -643,7 +643,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_75.jpg`,
         price: 2.99,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'root beer',
@@ -651,7 +651,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 1.50,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'orange crush',
@@ -659,7 +659,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 1.50,
-        category: categories[6]._id
+        category: categories[4]._id
       },
       {
         name: 'chocolate milk',
@@ -667,7 +667,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_78.jpg`,
         price: 2.00,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'Water',
@@ -675,7 +675,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 0.00,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'Coconut Water',
@@ -683,7 +683,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 1.50,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'milk',
@@ -691,7 +691,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_81.jpeg`,
         price: 2.00,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'strawberry smoothie',
@@ -699,7 +699,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_82.jpg`,
         price: 2.99,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'peach smoothie',
@@ -707,7 +707,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 2.99,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'orange juice',
@@ -715,7 +715,7 @@ db.once('open', async () => {
           '',
         image: `${path}items_84.jpg`,
         price: 1.99,
-        category: categories[7]._id
+        category: categories[5]._id
       },
       {
         name: 'apple juice',
@@ -723,7 +723,7 @@ db.once('open', async () => {
           '',
         image: 'placeholder.jpg',
         price: 1.99,
-        category: categories[7]._id
+        category: categories[5]._id
       },
     ]);
 

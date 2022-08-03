@@ -14,7 +14,9 @@ function Profile() {
 
   return (
     <>
-      <div className="container-login" >
+    <main>
+        <section className="content">
+      <div>
         <Link to="/">← Back to Items</Link>
 
         {user ? (
@@ -47,6 +49,8 @@ function Profile() {
           </>
         ) : null}
       </div>
+      </section>
+    </main>
     </>
   );
 }

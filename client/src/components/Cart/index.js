@@ -69,8 +69,9 @@ const Cart = () => {
     if (!state.cartOpen) {
         return (
             <div className="cart-closed" onClick={toggleCart}>
-                <span role="img" aria-label="trash">
-                    <h1>
+
+                <span className="links" role="img" aria-label="trash">
+
                     🛒
                     </h1>
                 </span>
@@ -80,7 +81,7 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <div className="close" onClick={toggleCart}>
+            <div className="close links" onClick={toggleCart}>
                 [close]
             </div>
             <h4 className='text-white' >Shopping Cart</h4>

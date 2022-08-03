@@ -43,16 +43,16 @@ function ProductList() {
   }
 
   return (
-    <div className="">
-      <h2 className='text-warning'>Our Items:</h2>
+    <div className="my-2">
       {state.items.length ? (
-        <div className='row justify-content-around' >
+        <div className="top_ranked">
           {filterItems().map((item) => (
             <Item
               key={item._id}
               _id={item._id}
               image={item.image}
               name={item.name}
+              description={item.description}
               price={item.price}
               thumbsUp={item.thumbsUp}
               thumbsDown={item.thumbsDown}
