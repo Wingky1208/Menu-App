@@ -242,6 +242,21 @@ footer section{
   transition: all .5s;
 }
 
+.past_order * {
+ color: #c2c2c2;
+}
+.past_order {
+  max-width: 50%;
+  margin: 0 auto;
+  border: 3px white solid
+
+}
+
+.past_order img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .item_card_TD img{
   width:175px;
   height:175px;

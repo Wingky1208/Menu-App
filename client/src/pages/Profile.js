@@ -26,10 +26,10 @@ function Profile() {
             </h2>
             {user.orders.map((order) => (
               <div key={order._id} className="my-2">
+                <div className="past_order">
                 <h3>
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3>
-                <div className="flex-row">
                   {order.items.map(({ _id, image, name, price }, index) => (
                     <div key={index}>
                       <Link to={`/items/${_id}`}>
@@ -38,9 +38,7 @@ function Profile() {
                         />
                         <p>{name}</p>
                       </Link>
-                      <div>
-                        <span>${price}</span>
-                      </div>
+                      <p>{price}</p>
                     </div>
                   ))}
                 </div>
