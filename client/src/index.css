@@ -17,25 +17,57 @@ h1,h2,h3,h4,h5,h6{
   color: var(--main-light-color);
 }
 
+.links{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.links:active{
+  color: white;  
+}
+
+h1 span{
+  color: var(--second-accent-color);
+}
+
+.links:hover{
+  color: var(--second-accent-color);
+}
+
 .banner{
   background-color: black;
-  color: white;
   overflow: hidden;
+  display: flex;
   position: relative;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 600px;
 }
 
+.banner h1{
+  font-size: 80px;
+  z-index: 2;
+  color: rgba(255,255,255,0.8);
+}
+
 .banner_logo{
   opacity: 0.8;
-  position: absolute;
-  top: 0;
-  z-index: 2;
+  width: 400px;
+  height: 400px;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.banner_logo:hover{  
+  transform: rotate(360deg);
 }
 
 .banner_video{
   position: absolute;
-  z-index: 1;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .cart{

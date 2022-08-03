@@ -8,8 +8,8 @@ function Footer(props) {
     // <Card className="text-center">
       <footer>
           <section class="content">
-            &copy; {new Date().getFullYear()} All Rights Reserved. Designed &amp; developed by <a href="https://github.com/abdallajama201" target="blank">Abdalla
-            </a>, <a href="https://github.com/JamesF905" target="blank">James</a>, <a href="https://github.com/Wingky1208"
+            &copy; {new Date().getFullYear()} All Rights Reserved. Designed &amp; developed by <a className="links" href="https://github.com/abdallajama201" target="blank">Abdalla
+            </a>, <a className="links" href="https://github.com/JamesF905" target="blank">James</a>, <a className="links" href="https://github.com/Wingky1208"
               target="blank">Wingky</a>
 
           </section>

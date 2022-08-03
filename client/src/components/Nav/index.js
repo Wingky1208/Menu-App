@@ -9,12 +9,12 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <span>
-            <NavLink to="/Profile">
+            <NavLink className="links" to="/Profile">
               Profile
             </NavLink>
           
             {/* this is not using the NavLink component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a className="links" href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           
@@ -24,11 +24,11 @@ function Nav() {
     } else {
       return (
       <span>
-            <NavLink to="/signup">
+            <NavLink className="links" to="/signup">
               Signup
             </NavLink>
          
-            <NavLink to="/login">
+            <NavLink className="links" to="/login">
               Login
             </NavLink>
          
@@ -40,18 +40,18 @@ function Nav() {
 
   return (
     <header>
-        <div className="content">
+        <section className="content">
             <NavLink to="/">
                 <img
                   alt="home"
                   src={`logo.png`}
                 />
-                <h1>hUNGRY tIME</h1>
+                <h1>Hungry<span>Time</span></h1>
             </NavLink>
             <nav>
               {showNavigation()}
             </nav>
-        </div>
+        </section>
     </header>
   );
 }
