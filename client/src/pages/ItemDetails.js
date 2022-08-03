@@ -84,29 +84,28 @@ function Detail() {
     <>
       <main>
         <section className="content">
+        <Link className="links" to="/">← Back to the Menu</Link>
       {currentItem && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to the Menu</Link>
-
-          <h2>{currentItem.name}</h2>
+        <div className="items_container">
+          
+          <img
+            alt={currentItem.name}
+             src={`/images/${currentItem.image}`}
+        />
+          <h2>{`${currentItem.name} - \$${currentItem.price}`}</h2> 
 
           <p>{currentItem.description}</p>
 
           <p>
-            <strong>Price:</strong>${currentItem.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
+            <button className="items_buttons" onClick={addToCart}>Add to Cart</button>
             <button
+              className="items_buttons"
               disabled={!cart.find((p) => p._id === currentItem._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
           </p>
-
-          <img
-            // src={`/images/${currentItem.image}`}
-            alt={currentItem.name}
-          />
         </div>
       ) : null}
     </section>

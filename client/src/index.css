@@ -71,7 +71,23 @@ h1 span{
 }
 
 .cart{
-  background-color: #08e9e6;
+  background-color: var(--main-light-color);
+}
+
+.items_container{
+  background-color: rgba(0,0,0,0.8);
+  max-width:1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--main-light-color);
+  padding: 20px;
+}
+
+.items_container img{
+width: 100%;
 }
 
 a, u{
@@ -239,6 +255,12 @@ video{
 .thumbs:hover{
   background-color: #1e0500;
 
+}
+
+.items_buttons{
+  margin: 10px;
+  min-width:150px;
+  min-height:40px;
 }
 
 button{
