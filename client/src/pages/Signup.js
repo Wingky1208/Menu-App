@@ -31,6 +31,8 @@ function Signup() {
   };
 
   return (
+<main>
+  <section className="content">
     <div>
       <Link to="/login">← Go to Login</Link>
 
@@ -81,6 +83,8 @@ function Signup() {
         </div>
       </form>
     </div>
+    </section>
+</main>
   );
 }
 

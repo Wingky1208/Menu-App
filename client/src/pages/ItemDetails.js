@@ -82,9 +82,11 @@ function Detail() {
 
   return (
     <>
+      <main>
+        <section className="content">
       {currentItem && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Items</Link>
+          <Link to="/">← Back to the Menu</Link>
 
           <h2>{currentItem.name}</h2>
 
@@ -107,7 +109,8 @@ function Detail() {
           />
         </div>
       ) : null}
-
+    </section>
+</main>
     </>
   );
 }

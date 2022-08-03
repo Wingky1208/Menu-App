@@ -80,7 +80,7 @@ function Item(item) {
         />        
       </Link>
       <div>
-        <h3>${name} ${price}</h3>
+        <h3>{name} ${price}</h3>
         <p className="desc">{description}</p>
         <div>
             <button onClick={addToCart}>Add to cart</button>
