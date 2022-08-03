@@ -25,21 +25,21 @@ function Profile() {
               Order History for {user.firstName} {user.lastName}
             </h2>
             {user.orders.map((order) => (
-              <div key={order._id} className="my-2">
+              <div key={order._id} className="">
                 <h3>
-                  {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
+                  {`Order from ${new Date(parseInt(order.purchaseDate)).toLocaleDateString()}:`}
                 </h3>
                 <div className="flex-row">
                   {order.items.map(({ _id, image, name, price }, index) => (
                     <div key={index}>
                       <Link to={`/items/${_id}`}>
-                        <img alt={name} 
-                        // src={`/images/${image}`} 
+                        <img alt={name}
+                        src={`/images/${image}`} 
                         />
-                        <p>{name}</p>
+                        <h5 className='text-white' >{name}</h5>
                       </Link>
                       <div>
-                        <span>${price}</span>
+                        <h5 className='text-white' >${price}</h5>
                       </div>
                     </div>
                   ))}

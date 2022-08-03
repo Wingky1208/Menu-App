@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 
+
 function Login() {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN);
@@ -59,7 +60,7 @@ function Login() {
           />
         </div>
         {error ? (
-          <div>
+          <div className="m-10">
             <p className="error-text">The provided credentials are incorrect</p>
           </div>
         ) : null}

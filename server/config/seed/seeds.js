@@ -633,7 +633,7 @@ db.once('open', async () => {
         name: 'sprite',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[4]._id
       },
@@ -649,7 +649,7 @@ db.once('open', async () => {
         name: 'root beer',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[4]._id
       },
@@ -657,7 +657,7 @@ db.once('open', async () => {
         name: 'orange crush',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[4]._id
       },
@@ -673,7 +673,7 @@ db.once('open', async () => {
         name: 'Water',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 0.00,
         category: categories[5]._id
       },
@@ -681,7 +681,7 @@ db.once('open', async () => {
         name: 'Coconut Water',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.50,
         category: categories[5]._id
       },
@@ -705,7 +705,7 @@ db.once('open', async () => {
         name: 'peach smoothie',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 2.99,
         category: categories[5]._id
       },
@@ -721,7 +721,7 @@ db.once('open', async () => {
         name: 'apple juice',
         description:
           '',
-        image: '',
+        image: 'placeholder.jpg',
         price: 1.99,
         category: categories[5]._id
       },
@@ -745,16 +745,31 @@ db.once('open', async () => {
     password: 'password12345'
   });
   
+  const items = await Item.find({});
+
   await User.create({
     firstName: 'Winkey',
     lastName: 'Liang',
     email: 'wL@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ]
+      },
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ],
+      }
+    ]
   });
   
-  const items = await Item.find({});
-
-
   await User.create({
     firstName: 'Abdalla',
     lastName: 'Jama',
@@ -782,7 +797,23 @@ db.once('open', async () => {
     firstName: 'James',
     lastName: 'Fidlin',
     email: 'jf@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ]
+      },
+      {
+        items: [
+          items[0],
+          items[1],
+          items[2]
+        ],
+      }
+    ]
   });
 
   console.log('users seeded');

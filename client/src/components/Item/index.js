@@ -72,6 +72,7 @@ function Item(item) {
   }
 
   return (
+
     <div className="item_card_TD">
       <Link to={`/items/${_id}`}>
         <img
@@ -79,7 +80,9 @@ function Item(item) {
           src={`/images/${image}`}
         />        
       </Link>
+        <h4 className="text-white" >${price}</h4>
       <div>
+
         <h3>{name} ${price}</h3>
         <p className="desc">{description}</p>
         <div>

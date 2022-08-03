@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-bg-color: #1e0500;
     --main-light-color: #c2c2c2;
     --first-accent-color: #c32222;
@@ -6,23 +6,32 @@
     --header_height: 50px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     color: var(--main-light-color);
 }
 
-a, u{
+a,
+u {
     text-decoration: none;
     color: var(--main-light-color);
 }
 
-a:hover, a:active{
+a:hover,
+a:active {
     color: initial;
     text-decoration: none;
 }
 
+
 html, body{
+
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -52,7 +61,7 @@ header *{
     white-space: nowrap;
 }
 
-header img{
+header img {
     width: 36px;
     height: 36px;
 }
@@ -74,19 +83,19 @@ footer{
 footer section{    
 }
 
-#banner{
+#banner {
     background-color: black;
     color: white;
     overflow: hidden;
 }
 
-.content{
+.content {
     height: 100%;
     max-width: 1400px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
-#top_ranked{
+#top_ranked {
     background-color: green;
     display: flex;
     flex-wrap: wrap;
@@ -109,13 +118,15 @@ footer section{
     transition: all .5s;
 }
 
+
 .item_card_TD img{
     width:175px;
     height:175px;
     background-color: #1e0500;
+
 }
 
-.item_card_TD div{
+.item_card_TD div {
     width: 80%;
     padding: 10px;
     display: flex;
@@ -128,7 +139,9 @@ footer section{
     border-bottom: 1px solid #c2c2c2;
 }
 
+
 .item_card_TD p{
+
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -153,9 +166,10 @@ footer section{
     transition: all .5s;
 }
 
-video{
+video {
     width: 100%;
 }
+
 
 button{
     background-color: var(--main-light-color);
@@ -223,6 +237,7 @@ button:hover{
         display: none;
     }
 }
+
 
 
 

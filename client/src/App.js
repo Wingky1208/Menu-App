@@ -18,6 +18,7 @@ import Footer from './components/Footer'
 import ItemDetails from './pages/ItemDetails'
 import { StoreProvider } from './utils/GlobalState';
 
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -40,41 +41,42 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-    <Router>
-      <div>
-        <StoreProvider>
-          <Nav />
-          <Routes>
-            <Route 
-              path="/" 
-              element={<Home />} 
-            />
-            <Route 
-              path="/menu" 
-              element={<Menu />} 
-            />
-            <Route 
-              path="/profile" 
-              element={<Profile />} 
-            />
-            <Route 
-              path="/login" 
-              element={<Login />} 
-            />
-            <Route 
-              path="/signup" 
-              element={<Signup />} 
-            />
-            <Route 
-              path="/items/:id" 
-              element={<ItemDetails />} 
-            />
-          </Routes>
-          <Footer />
-        </StoreProvider>
-      </div>
-    </Router>
-  </ApolloProvider>
+      <Router>
+        <div>
+          <StoreProvider>
+            <Nav />
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/menu"
+                element={<Menu />}
+              />
+              <Route
+                path="/profile"
+                element={<Profile />}
+              />
+              <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              <Route
+                path="/items/:id"
+                element={<ItemDetails />}
+              />
+            </Routes>
+
+            <Footer />
+          </StoreProvider>
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 

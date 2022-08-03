@@ -36,3 +36,30 @@ export default function MultiActionAreaCard(props) {
     </Card>
   );
 }*/
+
+
+// import Card from 'react-bootstrap/Card';
+
+// function MenuCard(props) {
+//   return (
+//     <Card style={{ width: '18rem' }}>
+//       <Card.Img variant="top" src={`/images/${image}`} />
+//       <Card.Body>
+//         <Card.Title>{props.name}</Card.Title>
+//         <Card.Text>
+//           {props.description}
+//           {props.price}
+//         </Card.Text>
+//         <Card.Text>
+//           {props.price}
+//         </Card.Text>
+//         <Card.Text>
+//           {props.thumbsUp}
+//           {props.thumbsDown}
+//         </Card.Text>
+//       </Card.Body>
+//     </Card>
+//   );
+// }
+
+// export default MenuCard;

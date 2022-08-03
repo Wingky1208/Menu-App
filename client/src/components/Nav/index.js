@@ -4,8 +4,6 @@ import Cart from "../Cart";
 
 function Nav() {
   function showNavigation() {
-
-
     if (Auth.loggedIn()) {
       return (
         <span>

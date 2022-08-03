@@ -69,8 +69,11 @@ const Cart = () => {
     if (!state.cartOpen) {
         return (
             <div className="cart-closed" onClick={toggleCart}>
+
                 <span className="links" role="img" aria-label="trash">
+
                     🛒
+                    </h1>
                 </span>
             </div>
         );
@@ -81,7 +84,7 @@ const Cart = () => {
             <div className="close links" onClick={toggleCart}>
                 [close]
             </div>
-            <h2>Shopping Cart</h2>
+            <h4 className='text-white' >Shopping Cart</h4>
             {state.cart.length ? (
                 <div>
                     {state.cart.map((item) => (
@@ -89,13 +92,13 @@ const Cart = () => {
                     ))}
 
                     <div className="flex-row space-between">
-                        <strong>Total: ${calculateTotal()}</strong>
+                        <strong className='text-white' >Total: ${calculateTotal()}</strong>
 
                         {/* Check to see if the user is logged in. If so render a button to check out */}
                         {Auth.loggedIn() ? (
-                            <button onClick={submitCheckout}>Checkout</button>
+                            <button onClick={submitCheckout} className='text-white' >Checkout</button>
                         ) : (
-                            <span>(log in to check out)</span>
+                            <span className='text-white' >(log in to check out)</span>
                         )}
                     </div>
                 </div>
