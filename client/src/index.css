@@ -33,12 +33,19 @@ html, body{
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   height: 100%;
   margin: 0;
   padding:0;
   background-color: var(--main-bg-color);
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  min-height: 100%;
 }
 
 header{
@@ -73,6 +80,7 @@ header img{
 main{
   flex: 1;
   padding-top: 70px;
+  background-color: green;
 }
 
 main section{

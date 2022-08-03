@@ -44,7 +44,7 @@ function Nav() {
             <NavLink to="/">
                 <img
                   alt="home"
-                  src={`./logo.png`}
+                  src={`logo.png`}
                 />
                 <h1>hUNGRY tIME</h1>
             </NavLink>
