@@ -14,6 +14,8 @@ function Profile() {
 
   return (
     <>
+    <main>
+        <section className="content">
       <div>
         <Link to="/">← Back to Items</Link>
 
@@ -47,6 +49,8 @@ function Profile() {
           </>
         ) : null}
       </div>
+      </section>
+    </main>
     </>
   );
 }

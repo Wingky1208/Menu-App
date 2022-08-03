@@ -31,15 +31,15 @@ function Login() {
 
   return (
     <main>
-        <section className="content">
-                
-
-    <div>
-      <Link to="/signup">← Go to Signup</Link>
-      <h2>Login</h2>
+        <section className="content">                
+        <Link to="/signup">← Go to Signup</Link>
+    <div className="form_style">
+      
+      <h1>Login</h1>
+      
       <form onSubmit={handleFormSubmit}>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email">Email address : </label>
           <input
             placeholder="youremail@email.com"
             name="email"
@@ -49,7 +49,7 @@ function Login() {
           />
         </div>
         <div>
-          <label htmlFor="pwd">Password:</label>
+          <label htmlFor="pwd">Password : </label>
           <input
             placeholder="********"
             name="password"
@@ -64,7 +64,7 @@ function Login() {
           </div>
         ) : null}
         <div>
-          <button type="submit">Submit</button>
+          <button className="form_submit" type="submit">Submit</button>
         </div>
       </form>
     </div>

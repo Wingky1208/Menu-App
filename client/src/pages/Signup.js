@@ -33,13 +33,14 @@ function Signup() {
   return (
 <main>
   <section className="content">
-    <div>
-      <Link to="/login">← Go to Login</Link>
-
-      <h2>Signup</h2>
+  <Link className="links" to="/login">← Go to Login</Link>
+    <div className="form_style">
+      
+    <h1>Please sign up</h1>
+    
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name : </label>
           <input
             placeholder="First"
             name="firstName"
@@ -49,7 +50,7 @@ function Signup() {
           />
         </div>
         <div>
-          <label htmlFor="lastName">Last Name:</label>
+          <label htmlFor="lastName">Last Name : </label>
           <input
             placeholder="Last"
             name="lastName"
@@ -59,7 +60,7 @@ function Signup() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email : </label>
           <input
             placeholder="youremail@email.com"
             name="email"
@@ -69,7 +70,7 @@ function Signup() {
           />
         </div>
         <div>
-          <label htmlFor="pwd">Password:</label>
+          <label htmlFor="pwd">Password : </label>
           <input
             placeholder="********"
             name="password"
@@ -79,7 +80,7 @@ function Signup() {
           />
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button className="form_submit" type="submit">Submit</button>
         </div>
       </form>
     </div>
