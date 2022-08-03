@@ -34,7 +34,7 @@ function Profile() {
                     <div key={index}>
                       <Link to={`/items/${_id}`}>
                         <img alt={name} 
-                        // src={`/images/${image}`} 
+                        src={`/images/${image}`} 
                         />
                         <p>{name}</p>
                       </Link>
