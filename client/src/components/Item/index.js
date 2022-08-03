@@ -71,19 +71,19 @@ function Item(item) {
   }
 
   return (
-    <div>
+    <div className="item_card_TD col-2">
       <Link to={`/items/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <h3>{name}</h3>
       </Link>
+        <h4 className="text-white" >${price}</h4>
       <div>
-        <span>${price}</span>
       </div>
-        <p onClick={addThumbsUp}>👍 {tUp}</p>
-        <p onClick={addThumbsDown}>👎 {tDown}</p>
+        <p onClick={addThumbsUp} className="text-warning" >👍 {tUp}</p>
+        <p onClick={addThumbsDown} className="text-warning" >👎 {tDown}</p>
       <div>
       </div>
       

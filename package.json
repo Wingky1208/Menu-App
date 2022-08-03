@@ -20,7 +20,9 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.9.3",
-    "react-bootstrap": "^2.4.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "dotenv": "^16.0.1",
     "react-pageflip": "^2.0.3"
   }
 }

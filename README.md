@@ -25,7 +25,7 @@ Home page with location, menu button, contact info.
 
 ### Deployment
 
-* [Link to app]( )
+* [Link to app](https://hungrytime.herokuapp.com/)
 * [Github](https://github.com/Wingky1208/Menu-App.git)
 
 ## Technologies
