@@ -44,7 +44,7 @@ function Menu() {
 
   return (
     <div>
-        <div>Choose a Menu</div>
+        <h2>Choose a Menu</h2>
         <select onClick={(e) => handleClick(e.target.value)}>
         {categories.map((item) => (
             <option

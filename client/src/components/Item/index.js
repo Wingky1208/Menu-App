@@ -81,11 +81,12 @@ function Item(item) {
       </Link>
       <div>
         <h3>${name} ${price}</h3>
-        <hr />
-        <p>{description}</p>
-        <p onClick={addThumbsUp}>👍 {tUp}</p>
-        <p onClick={addThumbsDown}>👎 {tDown}</p>
-        <button onClick={addToCart}>Add to cart</button>
+        <p className="desc">{description}</p>
+        <div>
+            <button onClick={addToCart}>Add to cart</button>
+            <p className="thumbs" onClick={addThumbsUp}>👍 {tUp}</p>
+            <p className="thumbs" onClick={addThumbsDown}>👎 {tDown}</p>
+        </div>
       </div>
     </div>
   );

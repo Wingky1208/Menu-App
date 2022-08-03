@@ -44,7 +44,6 @@ function ProductList() {
 
   return (
     <div className="my-2">
-      <h2>Top Dishes</h2>
       {state.items.length ? (
         <div className="top_ranked">
           {filterItems().map((item) => (
