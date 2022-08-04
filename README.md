@@ -53,7 +53,7 @@ Cloud platform that lets companies deploy web applications.
 
 
 ## Screenshots
-
+[![HungryTime][product-screenshot]](https://hungrier-time.herokuapp.com/)
 
 
 ## Contributors
@@ -70,3 +70,5 @@ If you have any additional questions not answered here or wish to contact us reg
 [abdallajama201@gmail.com](mailto:abdallajama201@gmail.com),
 [djameslfidlin@gmail.com](mailto:jameslfidlin@gmail.com),
 [wingkyleung1208@hotmail.com](mailto:wingkyleung1208@hotmail.com ),
+
+[product-screenshot]: images/Project_Screenshot.png

@@ -633,7 +633,7 @@ db.once('open', async () => {
         name: 'sprite',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_74.png`,
         price: 1.50,
         category: categories[4]._id
       },
@@ -649,7 +649,7 @@ db.once('open', async () => {
         name: 'root beer',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_76.jpg`,
         price: 1.50,
         category: categories[4]._id
       },
@@ -657,7 +657,7 @@ db.once('open', async () => {
         name: 'orange crush',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_77.jpeg`,
         price: 1.50,
         category: categories[4]._id
       },
@@ -673,7 +673,7 @@ db.once('open', async () => {
         name: 'Water',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_79.jpg`,
         price: 0.00,
         category: categories[5]._id
       },
@@ -681,7 +681,7 @@ db.once('open', async () => {
         name: 'Coconut Water',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_80.jpg`,
         price: 1.50,
         category: categories[5]._id
       },
@@ -705,7 +705,7 @@ db.once('open', async () => {
         name: 'peach smoothie',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_83.jpg`,
         price: 2.99,
         category: categories[5]._id
       },
@@ -721,7 +721,7 @@ db.once('open', async () => {
         name: 'apple juice',
         description:
           '',
-        image: 'placeholder.jpg',
+        image: `${path}items_85.jpg`,
         price: 1.99,
         category: categories[5]._id
       },
